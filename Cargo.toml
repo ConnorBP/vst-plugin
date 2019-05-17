@@ -1,0 +1,12 @@
+[package]
+name = "vst-plugin"
+version = "0.1.0"
+authors = ["Connor Postma <connor.postma@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+vst = { git = "https://github.com/rust-dsp/rust-vst" }
+
+[lib]
+name = "myvst"
+crate-type = ["cdylib"]
